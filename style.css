@@ -1,2 +1,69 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  overflow-y: hidden;
+  overflow-x: auto;
+}
+
+:root{
+  --bg-dark-- : black;
+  --bg-light-- : white;
+  --color-light-- :white;
+  --color-dark-- : black;
+}
+
+#dark{
+  position: absolute;
+  right: 20px;
+  margin-top: -100px;
+  padding: 0.7rem;
+}
 body{
+  background-color: var(--bg-light--);
+  color: var(--color-dark--);
+  transition: all 0.3s 0.2s ease-in-out;
+}
+.container{
+  display: grid;
+  min-height: 95vh;
+  gap: 0.3rem;
+  min-width:90vw;
+  align-content: center;
+  justify-content: center;
+  grid-template-columns: repeat(4, minmax(3rem, 8rem));
+  grid-template-rows: minmax(4em, auto) repeat(6, 5rem);
+}
+.span-two{
+  grid-column: span 2;
+}
+h1{
+  padding: 2rem;
+  font-size: 3em;
+  text-align: center;
+}
+.output{
+  background-color: rgb(208, 236, 45);
+  color: firebrick;
+  grid-column: 1/ -1;
+  display: flex;
+  gap:1.9rem;
+  padding: 0.6rem;
+  border: 1px salmon dotted;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-items: center;
+}
+.prev-output{
+  font-size: 1.5rem;
+}
+.cur-output{
+  font-size: 1.9rem;
+}
+h1.dark{
+  border:none;
+}
+.dark{
+  background-color: var(--bg-dark--);
+  color: var(--color-light--);
 }
