@@ -14,13 +14,26 @@
 }
 
 #dark{
+  background-color: rgba(220, 240, 202, 0.726);
+  border-radius: 20% 10% 20% 10%;
   position: absolute;
   right: 20px;
   margin-top: -100px;
   padding: 0.7rem;
+  font-size: 0.9rem;
+}
+#dark.dark{
+  background-color: rgba(45, 58, 54, 0.534);
+}
+#dark.dark:hover{
+  background-color: rgba(3, 10, 59, 0.6);
+}
+
+#dark:hover{
+  background-color: rgba(4, 158, 1, 0.6);
 }
 body{
-  background-color: var(--bg-light--);
+  background-image: linear-gradient(rgba(66, 211, 216, 0.692) 40%,rgb(192, 94, 192));
   color: var(--color-dark--);
   transition: all 0.3s 0.2s ease-in-out;
 }
@@ -42,28 +55,85 @@ h1{
   font-size: 3em;
   text-align: center;
 }
+header{
+  position: relative;
+}
+
 .output{
-  background-color: rgb(208, 236, 45);
-  color: firebrick;
+  background-color: rgba(188, 214, 43, 0.774);
+  color: rgb(4, 22, 179);
   grid-column: 1/ -1;
   display: flex;
-  gap:1.9rem;
-  padding: 0.6rem;
-  border: 1px salmon dotted;
+  gap:2.5rem;
+  word-wrap: break-word;
+  word-break: break-all;
+  padding: 1rem;
+  border: 2px ridge yellow;
   flex-direction: column;
   align-items: flex-end;
   justify-items: center;
 }
+.output.dark{
+  border: 1px salmon dotted;}
 .prev-output{
   font-size: 1.5rem;
 }
 .cur-output{
   font-size: 1.9rem;
 }
-h1.dark{
-  border:none;
+button{
+  font-size: 1.5rem;
+  .container > button:hover,.container > button:focus-visible,.container > button:focus-within,.container >  button:focus{
+    background-color: rgb(90, 110, 117);
+    border: 2px solid rgb(15, 11, 11);
+    color: rgb(172, 255, 18);
+  }
 }
-.dark{
+  
+button[data-number]{
+  background-color: rgb(175, 64, 245);
+}
+
+button[data-number]:hover,button[data-number]:focus,button[data-number]:focus-visible,button[data-number]:focus-within{
+  background-color: rgb(167, 18, 185);
+}
+button[data-operator]{
+  background-color: rgb(247, 62, 108);
+}
+button[data-operator]:hover,button[data-operator]:focus,button[data-operator]:focus-visible,button[data-operator]:focus-within{
+  background-color: rgb(232, 86, 248);
+}
+button[data-plus]{
+  background-color: rgb(120, 192, 102);
+}
+
+button[data-plus]:hover,button[data-plus]:focus,button[data-plus]:focus-visible,button[data-plus]:focus-within{
+  background-color: rgb(35, 187, 154);
+}
+button[data-equal]{
+  background-color: rgb(26, 185, 248);
+}
+
+button[data-equal]:hover,button[data-equal]:focus,button[data-equal]:focus-visible,button[data-equal]:focus-within{
+  background-color: rgba(65, 226, 205, 0.562);
+}
+button[data-ac]{
+  background-color: rgb(150, 238, 50);
+}
+
+button[data-ac]:hover,button[data-ac]:focus,button[data-ac]:focus-visible,button[data-ac]:focus-within{
+  background-color: rgba(56, 92, 87, 0.562);
+}
+
+button[data-del]{
+  background-color: rgb(143, 188, 255);
+}
+
+button[data-del]:hover,button[data-del]:focus,button[data-del]:focus-visible,button[data-del]:focus-within{
+  background-color: rgb(209, 179, 46);
+}
+
+button.dark, .dark{
   background-color: var(--bg-dark--);
   color: var(--color-light--);
 }
