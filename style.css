@@ -89,7 +89,6 @@ button{
     color: rgb(172, 255, 18);
   }
 }
-  
 button[data-number]{
   background-color: rgb(175, 64, 245);
 }
@@ -133,7 +132,17 @@ button[data-del]:hover,button[data-del]:focus,button[data-del]:focus-visible,but
   background-color: rgb(209, 179, 46);
 }
 
+button.dark:hover, button.dark:focus,button.dark:focus-visible, button.dark:focus-within{
+ background-image: linear-gradient(black, rgb(20, 32, 20));
+}
+
 button.dark, .dark{
   background-color: var(--bg-dark--);
   color: var(--color-light--);
+}
+.hidden{
+  display: none;
+}
+#error{
+  color: red;
 }
