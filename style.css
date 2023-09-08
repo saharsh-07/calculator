@@ -60,7 +60,7 @@ header{
 }
 
 .output{
-  background-color: rgba(188, 214, 43, 0.774);
+  background-color: rgb(150, 238, 50);
   color: rgb(4, 22, 179);
   grid-column: 1/ -1;
   display: flex;
@@ -117,7 +117,7 @@ button[data-equal]:hover,button[data-equal]:focus,button[data-equal]:focus-visib
   background-color: rgba(65, 226, 205, 0.562);
 }
 button[data-ac]{
-  background-color: rgb(150, 238, 50);
+  background-color:rgba(188, 214, 43, 0.774) ;
 }
 
 button[data-ac]:hover,button[data-ac]:focus,button[data-ac]:focus-visible,button[data-ac]:focus-within{
