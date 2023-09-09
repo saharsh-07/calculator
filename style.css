@@ -64,6 +64,7 @@ header{
   color: rgb(4, 22, 179);
   grid-column: 1/ -1;
   display: flex;
+  min-height: 10em;
   gap:2.5rem;
   word-wrap: break-word;
   word-break: break-all;
@@ -72,6 +73,7 @@ header{
   flex-direction: column;
   align-items: flex-end;
   justify-items: center;
+  justify-content: space-evenly;
 }
 .output.dark{
   border: 1px salmon dotted;}
